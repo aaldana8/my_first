@@ -4,7 +4,7 @@
 //
 export const availableMajors = [
     {id: 1, name: 'Computer Science', description: 'Testing Branching' },
-    {id: 2, name: 'Psychology', description: 'computer systems and programing' },
+    {id: 2, name: 'Psychology', description: 'Second Testing' },
     {id: 3, name: 'Business Admin', description: 'computer systems and programing' },
     {id: 4, name: 'Mechanical Eng', description:'computer systems and programing' },
     {id: 5, name: 'Biology', description: 'computer systems and programing' },
