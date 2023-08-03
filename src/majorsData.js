@@ -3,8 +3,8 @@
 // for us to be able to work on it easier as a team.
 //
 export const availableMajors = [
-    {id: 1, name: 'Computer Science', description: 'computer systems and programming' },
-    {id: 2, name: 'Psychology', description: 'computer systems and programing' },
+    {id: 1, name: 'Computer Science', description: 'Testing Branching' },
+    {id: 2, name: 'Psychology', description: 'Second Testing222' },
     {id: 3, name: 'Business Admin', description: 'computer systems and programing' },
     {id: 4, name: 'Mechanical Eng', description:'computer systems and programing' },
     {id: 5, name: 'Biology', description: 'computer systems and programing' },
