@@ -1,3 +1,12 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';//using font awesome library
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';//using font awesome library
+import { availableMajors, questionsToAsk } from './majorsData.js';//importing questions/majors from majorData.js
+import React, { useState } from 'react';// import useState from react for reselect/pickMaj/ansQuestion
+import './MajorChooser.css';
+import { motion } from 'framer-motion';
+
+const MajorChooser = () => {
+
   const getHighestAffinityMajor = () => {
     // Sort majors list, give precedence to item with higher affinity
     // NOTE: If affinities are equal, precedence goes to item1
@@ -27,7 +36,7 @@
           console.log(`affinity=${majorItem.affinity}`);
         });
       }
-      }
+  }
 
   // Usage of state hooks below / react
 
