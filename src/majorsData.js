@@ -126,8 +126,16 @@ export const availableMajors = [
   ];
   
   export const questionsToAsk = [
-  { id: 1, text: 'Are you interested in working with computers?' },
-  { id: 2, text: 'Do you enjoy studying human behavior and the mind?' },
-  { id: 3, text: 'Are you interested in business and management?' },
- 
+  {
+    id: 1, 
+    text: 'I need the freedom to be creative and express myself.', 
+  },
+  { 
+    id: 2, 
+    text: 'I care about the state of the environment and want to help improve it in my career.', 
+  },
+  { 
+    id: 3, 
+    text: 'I like to give advice.', 
+  },
   ];
