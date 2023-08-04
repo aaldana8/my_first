@@ -33,12 +33,16 @@ const MajorChooser=()=>{
   // Holds the index of the current question I'm on
   const [currentQuestion, setCurrentQuestion] = useState(0);
   // Holds user answers to questions
-  const [answer, setAnswer] = useState(null);  // TODO: Decide whether true, false, or null should be initial state
+  const [answer, setAnswer] = useState(false);  // TODO: Decide whether true, false, or null should be initial state
+
+
+
   // Whenever I click a function, these reset the selections
   const reSelect = () => {
     setchoseMaj(null);
     setCurrentQuestion(0);
-    setAnswer(null);  // TODO: See state hook definition
+    setAnswer(false);  // TODO: See state hook definition
+    // TODO: Reset all major affinities. Currently, subsequent quiz attempts will cause previous affinities to carry over
   };
   
   //Reset the choseMaj, curr index, and answer array
