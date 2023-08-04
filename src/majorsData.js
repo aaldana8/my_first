@@ -123,19 +123,85 @@ export const availableMajors = [
     description: 'computer systems and programing' ,
     affinity: 10
   }, 
-  ];
+];
   
-  export const questionsToAsk = [
+export const questionsToAsk = [
   {
     id: 1, 
     text: 'I need the freedom to be creative and express myself.', 
+    weights: [
+      1, // Computer Science
+      1, // Psychology
+      1, // Business Administration
+      1, // Mechanical Engineering
+      1, // Biology
+      1, // Art History
+      1, // Environmental Science
+      1, // Journalism
+      1, // Marketing
+      1, // English Literature
+      1, // Civil Engineering
+      1, // Political Science
+      1, // Chemistry
+      1, // Music Performance
+      1, // Economics
+      1, // Sociology
+      1, // Nursing
+      1, // Graphic Design
+      1, // Physics
+      1, // History
+    ], 
   },
   { 
     id: 2, 
     text: 'I care about the state of the environment and want to help improve it in my career.', 
+    weights: [
+      1, // Computer Science
+      1, // Psychology
+      1, // Business Administration
+      1, // Mechanical Engineering
+      1, // Biology
+      1, // Art History
+      1, // Environmental Science
+      1, // Journalism
+      1, // Marketing
+      1, // English Literature
+      1, // Civil Engineering
+      1, // Political Science
+      1, // Chemistry
+      1, // Music Performance
+      1, // Economics
+      1, // Sociology
+      1, // Nursing
+      1, // Graphic Design
+      1, // Physics
+      1, // History
+    ], 
   },
   { 
     id: 3, 
     text: 'I like to give advice.', 
+    weights: [
+      1, // Computer Science
+      1, // Psychology
+      1, // Business Administration
+      1, // Mechanical Engineering
+      1, // Biology
+      1, // Art History
+      1, // Environmental Science
+      1, // Journalism
+      1, // Marketing
+      1, // English Literature
+      1, // Civil Engineering
+      1, // Political Science
+      1, // Chemistry
+      1, // Music Performance
+      1, // Economics
+      1, // Sociology
+      1, // Nursing
+      1, // Graphic Design
+      1, // Physics
+      1, // History
+    ], 
   },
-  ];
+];
