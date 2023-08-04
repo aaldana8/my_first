@@ -1,22 +1,23 @@
-import{FontAwesomeIcon}from'@fortawesome/react-fontawesome';//using font awesome library
-import{faCheckCircle}from'@fortawesome/free-solid-svg-icons';//using font awesome library
-import{availableMajors,questionsToAsk}from './majorsData.js';//importing questions/majors from majorData.js
-import React,{useState}from'react';// import useState from react for reselect/pickMaj/ansQuestion
-import'./MajorChooser.css';
-import{motion}from'framer-motion';
-const MajorChooser=()=>{
-  const majLogic=()=>{
-    //logic Stage
-    const scoreBoard = availableMajors.map((majorItem) => {  // NOTE: Might not need map() to implement proof of concept
-      let points=0;
-      if (majorItem.name === 'Business Admin' && answer[2] === 'yes') {
-        points=points+2;
+
+  // Update current affinity score depending on answer received from current question
+  // If user answered yes, affinities increase; responding no decreases affinities
+  const updateAffinities = (uinput) => {
+    // DEBUG: Remove before final verification
+    console.log(`updateAffinities(): uinput=${uinput}`)
+    
+      if (uinput) {
+        availableMajors.forEach((majorItem) => {
+          console.log(`major=${majorItem.name}`);
+          majorItem.affinity += questionsToAsk[currentQuestion].weights[majorItem.id - 1]
+          console.log(`affinity=${majorItem.affinity}`);
+        });
+      } else {
+        availableMajors.forEach((majorItem) => {
+          console.log(`major=${majorItem.name}`);
+          majorItem.affinity -= questionsToAsk[currentQuestion].weights[majorItem.id - 1]
+          console.log(`affinity=${majorItem.affinity}`);
+        });
       }
-      if (majorItem.name === 'Computer Science' && answer[0] === 'yes') {
-        points=points+2;
-      }
-      if (majorItem.name === 'Psychology' && answer[1] === 'yes') {
-        points=points+2;
       }
 
       return {majorItem, affinity: points};
@@ -54,8 +55,10 @@ const MajorChooser=()=>{
   // yes = true; no = false
   const answerQuestion = (uinput) => {
     setAnswer(uinput);
-    console.log(uinput)
-    // TODO: Use answer and call for score update function
+    // DEBUG: Remove before final verification
+    console.log(`answerQuestion(): answer=${answer}`);
+    // Update affinities every time yes or no is clicked
+    updateAffinities(uinput);
     setCurrentQuestion(currentQuestion+1);
   };
 
