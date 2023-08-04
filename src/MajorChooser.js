@@ -1,3 +1,12 @@
+  const getHighestAffinityMajor = () => {
+    // Sort majors list, give precedence to item with higher affinity
+    // NOTE: If affinities are equal, precedence goes to item1
+    availableMajors.sort((item1, item2) => (item1.affinity >= item2.affinity) ? -1 : 1);
+
+    // DEBUG: Remove before final verification
+    console.log(availableMajors);
+
+  return availableMajors[0];};     
 
   // Update current affinity score depending on answer received from current question
   // If user answered yes, affinities increase; responding no decreases affinities
@@ -82,7 +91,7 @@
   );
 
   //Do logic and set recommended major
-  }else{const recommendedMajor=majLogic();
+  }else{const recommendedMajor=getHighestAffinityMajor();
       return(
   //POST QUESTION BOX
   //POST QUESTION BOX
