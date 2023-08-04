@@ -7,13 +7,24 @@ import{motion}from'framer-motion';
 const MajorChooser=()=>{
   const majLogic=()=>{
     //logic Stage
-    const scoreBoard=availableMajors.map((majorItem) => {
-      let pointz=0;
-      if(majorItem.name==='Business Admin'&&uinput[2]==='yes'){pointz=pointz+2;}
-      if(majorItem.name==='Computer Science'&&uinput[0]==='yes'){pointz=pointz+2;}
-      if(majorItem.name==='Psychology'&&uinput[1]==='yes'){pointz=pointz+2;}
-      return{majorItem,pointz};});
-       scoreBoard.sort((test1, test2)=>test2.pointz-test1.pointz);return scoreBoard[0].majorItem;};     
+    const scoreBoard = availableMajors.map((majorItem) => {  // NOTE: Might not need map() to implement proof of concept
+      let points=0;
+      if (majorItem.name === 'Business Admin' && answer[2] === 'yes') {
+        points=points+2;
+      }
+      if (majorItem.name === 'Computer Science' && answer[0] === 'yes') {
+        points=points+2;
+      }
+      if (majorItem.name === 'Psychology' && answer[1] === 'yes') {
+        points=points+2;
+      }
+
+      return {majorItem, affinity: points};
+    });
+       
+    scoreBoard.sort((test1, test2)=>test2.pointz-test1.pointz);
+
+  return scoreBoard[0].majorItem;};     
 
   // Usage of state hooks below / react
 
