@@ -18,18 +18,26 @@ const MajorChooser=()=>{
   // Usage of state hooks below / react
 
   // Holds currently selected major
-  const[choseMaj,setchoseMaj]=useState(null);
+  const [choseMaj, setchoseMaj] = useState(null);
   // Holds the index of the current question I'm on
-  const[currentQuestion,setCurrentQuestion]=useState(0);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
   // Holds user answers to questions
   const[uinput,setAnswers]=useState([]);
   // Whenever I click a function, these reset the selections
   const reSelect=()=>{setchoseMaj(null);setCurrentQuestion(0);setAnswers([]) };
   //Reset the choseMaj, curr index, and answer array
-  const pickMaj=(majorItem)=>{setchoseMaj(majorItem);};
-  //
-  const answerQuestion=(uinput)=>{setAnswers([...uinput,uinput]);setCurrentQuestion(currentQuestion+1);};
+  const pickMaj = (majorItem) => {
+    setchoseMaj(majorItem);
+  }
  
+  // Called when either yes or no button is clicked
+  // yes = true; no = false
+  const answerQuestion = (uinput) => {
+    setAnswer(uinput);
+    console.log(uinput)
+    // TODO: Use answer and call for score update function
+    setCurrentQuestion(currentQuestion+1);
+  };
 
   // Rendering the content based on the state
 
@@ -44,7 +52,7 @@ const MajorChooser=()=>{
       >
        <h2 className="quest-text"><FontAwesomeIcon icon={faCheckCircle} className="question-icon" />{questionsToAsk[currentQuestion].text} </h2>
        <div className="ans-push">
-       <button className="ans-but" onClick={()=>answerQuestion('yes')}>YES</button><button className="ans-but" onClick={()=>answerQuestion('no')}>NO</button></div>
+       <button className="ans-but" onClick={()=>answerQuestion(true)}>YES</button><button className="ans-but" onClick={()=>answerQuestion(false)}>NO</button></div>
         </motion.div>
   // Rendering content based on the state
       
