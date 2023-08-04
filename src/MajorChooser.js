@@ -29,13 +29,6 @@
       }
       }
 
-      return {majorItem, affinity: points};
-    });
-       
-    scoreBoard.sort((test1, test2)=>test2.pointz-test1.pointz);
-
-  return scoreBoard[0].majorItem;};     
-
   // Usage of state hooks below / react
 
   // Holds currently selected major
