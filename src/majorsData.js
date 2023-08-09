@@ -5,7 +5,7 @@
 
 export const availableMajors = [
   {
-    id: 1, 
+    id: 1,
     name: 'Accounting',
     college: 'College of Business',
     description: {
@@ -16,7 +16,7 @@ export const availableMajors = [
     affinity: 10
   },
   {
-    id: 2, 
+    id: 2,
     name: 'Acting',
     college: 'Hixson-Lied College of Fine and Performing Arts',
     description: {
@@ -27,7 +27,7 @@ export const availableMajors = [
     affinity: 10
   },
   {
-    id: 3, 
+    id: 3,
     name: 'Actuarial Science',
     college: 'College of Business',
     description: {
@@ -38,7 +38,7 @@ export const availableMajors = [
     affinity: 10
   },
   {
-    id: 4, 
+    id: 4,
     name: 'Anthropology',
     college: 'College of Arts and Sciences',
     description: {
@@ -70,7 +70,7 @@ export const availableMajors = [
     affinity: 10
   },
   {
-    id: 5, 
+    id: 5,
     name: 'Architecture',
     college: 'College of Architecture',
     description: {
@@ -81,7 +81,7 @@ export const availableMajors = [
     affinity: 10
   },
   {
-    id: 6, 
+    id: 6,
     name: 'Art',
     college: 'Hixson-Lied College of Fine and Performing Arts',
     description: {
@@ -112,7 +112,7 @@ export const availableMajors = [
     affinity: 10
   },
   {
-    id: 7, 
+    id: 7,
     name: 'Biochemistry',
     college: 'College of Arts and Sciences',
     description: {
@@ -142,7 +142,7 @@ export const availableMajors = [
     affinity: 10
   },
   {
-    id: 8, 
+    id: 8,
     name: 'Biological Sciences',
     college: 'College of Arts and Sciences',
     description: {
@@ -812,7 +812,7 @@ export const availableMajors = [
   },
   {
     id: 34,
-    name: 'Journalism', 
+    name: 'Journalism',
     college: 'College of Journalism and Mass Communications',
     description: {
       academics: "From day one, you will have hands-on opportunities to hone your skills as a storyteller. You will learn to create stories in words and images, how to use social media to report and how to produce multimedia stories.Journalists keep the public informed by offering a window to the world through the stories they tell. As a journalism major, you will learn how to gather and organize information, produce photography and videography that can be displayed in a variety of media and the importance of free expression in a democratic society and the media's role in fostering that freedom.You can get involved with special opportunities, such as:\n" +
@@ -1330,141 +1330,1519 @@ export const availableMajors = [
     affinity: 10
   }
 ];
-  
-// TODO: Add rest of questions after web scraping
+
+// TODO: Update question weights for recommendations
 export const questionsToAsk = [
   {
-    id: 1, 
-    text: 'I need the freedom to be creative and express myself.', 
+    id: 1,
+    text: 'I need the freedom to be creative and express myself.',
     weights: [
-      1, // Computer Science
-      0, // Psychology
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
       0, // Business Administration
-      1, // Mechanical Engineering
-      0, // Biology
-      2, // Art History
-      2, // Environmental Science
-      3, // Journalism
-      // 1, // Marketing
-      // 1, // English Literature
-      // 1, // Civil Engineering
-      // 1, // Political Science
-      // 1, // Chemistry
-      // 1, // Music Performance
-      // 1, // Economics
-      // 1, // Sociology
-      // 1, // Nursing
-      // 1, // Graphic Design
-      // 1, // Physics
-      // 1, // History
-    ], 
-  },
-  { 
-    id: 2, 
-    text: 'I care about the state of the environment and want to help improve it in my career.', 
-    weights: [
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
       0, // Computer Science
-      0, // Psychology
-      0, // Business Administration
-      0, // Mechanical Engineering
-      2, // Biology
-      0, // Art History
-      3, // Environmental Science
-      0, // Journalism
-      // 1, // Marketing
-      // 1, // English Literature
-      // 1, // Civil Engineering
-      // 1, // Political Science
-      // 1, // Chemistry
-      // 1, // Music Performance
-      // 1, // Economics
-      // 1, // Sociology
-      // 1, // Nursing
-      // 1, // Graphic Design
-      // 1, // Physics
-      // 1, // History
-    ], 
-  },
-  { 
-    id: 3, 
-    text: 'I like to give advice.', 
-    weights: [
-      1, // Computer Science
-      3, // Psychology
-      0, // Business Administration
-      1, // Mechanical Engineering
-      0, // Biology
-      0, // Art History
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
       0, // Environmental Science
-      2, // Journalism
-      // 1, // Marketing
-      // 1, // English Literature
-      // 1, // Civil Engineering
-      // 1, // Political Science
-      // 1, // Chemistry
-      // 1, // Music Performance
-      // 1, // Economics
-      // 1, // Sociology
-      // 1, // Nursing
-      // 1, // Graphic Design
-      // 1, // Physics
-      // 1, // History
-    ], 
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
   },
-  { 
-    id: 4, 
-    text: 'I am interested in rehabilitating and healing people.', 
+  {
+    id: 2,
+    text: 'I enjoy theatre arts, either performing as an actor or working behind the scenes on a production.',
     weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
       0, // Computer Science
-      3, // Psychology
-      0, // Business Administration
-      0, // Mechanical Engineering
-      2, // Biology
-      0, // Art History
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
       0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
       0, // Journalism
-    ], 
-  },
-  { 
-    id: 5, 
-    text: 'I am very ambitious, persuasive, and love coming up with new ideas.', 
-    weights: [
-      1, // Computer Science
-      0, // Psychology
-      3, // Business Administration
+      0, // Marketing
+      0, // Mathematics
       0, // Mechanical Engineering
-      0, // Biology
-      0, // Art History
-      2, // Environmental Science
-      2, // Journalism
-    ], 
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
   },
-  { 
-    id: 6, 
-    text: 'I enjoy learning about different parts of the world.', 
+  {
+    id: 3,
+    text: 'I like to give advice.',
     weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
       0, // Computer Science
-      0, // Psychology
-      2, // Business Administration
-      0, // Mechanical Engineering
-      0, // Biology
-      3, // Art History
-      2, // Environmental Science
-      1, // Journalism
-    ], 
-  },
-  { 
-    id: 7, 
-    text: 'I like math and figuring out how things work.', 
-    weights: [
-      3, // Computer Science
-      0, // Psychology
-      0, // Business Administration
-      3, // Mechanical Engineering
-      2, // Biology
-      0, // Art History
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
       0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
       0, // Journalism
-    ], 
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
   },
+  {
+    id: 4,
+    text: 'I am interested in rehabilitating and healing people.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 5,
+    text: 'I am very ambitious, persuasive and love coming up with new ideas.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 6,
+    text: 'I care about the state of the environment and want to help improve it in my career.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 7,
+    text: 'I enjoy learning about different parts of the world.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 8,
+    text: 'I like math and figuring out how things work.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 9,
+    text: "I'm interested in graphic design and/or web design.",
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 10,
+    text: "I'm interested in technology and learning how computers work.",
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 11,
+    text: 'I enjoy learning about the human body and the natural world.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 12,
+    text: 'I like to work with my hands.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 13,
+    text: 'I have a strong interest and ability in visual arts.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 14,
+    text: 'I work well with others, and I have strong written and verbal communication skills.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 15,
+    text: "I'm good with numbers and am detail-oriented.",
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 16,
+    text: "I'm interested in law, debate, government and politics.",
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 17,
+    text: 'I would like to work with conflict resolution, mediation or criminal justice.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 18,
+    text: 'I am always reading a book or writing my own stories.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 19,
+    text: 'I like to experiment with better and faster ways of doing things.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 20,
+    text: 'I am patient and enjoy working with children.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 21,
+    text: "I'm interested in science, and I want to help people.",
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 22,
+    text: 'I love learning new languages.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 23,
+    text: 'I enjoy helping people.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 24,
+    text: 'I want to work with people who have been oppressed or on the margins of society.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 25,
+    text: "I'm interested in a wide range of subjects and careers.",
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 26,
+    text: "I'm interested in intellectual ideas and philosophy.",
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 27,
+    text: 'I like to sing and/or play musical instruments.',
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  },
+  {
+    id: 28,
+    text: "I'm good at organizing and like to be in charge.",
+    weights: [
+      0, // Accounting
+      0, // Acting
+      0, // Actuarial Science
+      0, // Anthropology
+      0, // Architecture
+      0, // Art
+      0, // Biochemistry
+      0, // Biological Sciences
+      0, // Biological Systems Engineering
+      0, // Broadcasting
+      0, // Business Administration
+      0, // Chemical Engineering
+      0, // Chemistry
+      0, // Child, Youth, and Family Studies
+      0, // Civil Engineering
+      0, // Communication Studies
+      0, // Computer Engineering
+      0, // Computer Science
+      0, // Construction Management
+      0, // Criminology and Criminal Justice
+      0, // Dance
+      0, // Economics
+      0, // Electrical Engineering
+      0, // English
+      0, // Environmental Science
+      0, // Finance
+      0, // Fisheries and Wildlife
+      0, // Food Science and Technology
+      0, // Forensic Science
+      0, // Geology
+      0, // Graphic Design
+      0, // History
+      0, // Hospitality, Restaurant, and Tourism Management
+      0, // Journalism
+      0, // Marketing
+      0, // Mathematics
+      0, // Mechanical Engineering
+      0, // Meteorology and Climatology
+      0, // Music
+      0, // Nutrition and Health Sciences
+      0, // Philosophy
+      0, // Physics
+      0, // Political Science
+      0, // Psychology
+      0, // Sports Media and Communication
+      0, // Theatre (Design/Technical Production)
+      0, // Veterinary Science
+      0, // Women's and Gender Studies
+    ]
+  }
 ];
