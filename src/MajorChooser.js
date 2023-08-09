@@ -2,8 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';//using font aw
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';//using font awesome library
 import { availableMajors, questionsToAsk } from './majorsData.js';//importing questions/majors from majorData.js
 import React, { useState } from 'react';// import useState from react for reselect/pickMaj/ansQuestion
-import './MajorChooser.css';
 import { motion } from 'framer-motion';
+import './MajorChooser.css';
 
 const MajorChooser = () => {
 
@@ -47,8 +47,6 @@ const MajorChooser = () => {
   // Holds user answers to questions
   const [answer, setAnswer] = useState(false);  // TODO: Decide whether true, false, or null should be initial state
 
-
-
   // Whenever I click a function, these reset the selections
   const reSelect = () => {
     setchoseMaj(null);
@@ -86,7 +84,7 @@ const MajorChooser = () => {
       >
        <h2 className="quest-text"><FontAwesomeIcon icon={faCheckCircle} className="question-icon" />{questionsToAsk[currentQuestion].text} </h2>
        <div className="ans-push">
-       <button className="ans-but" onClick={()=>answerQuestion(true)}>YES</button><button className="ans-but" onClick={()=>answerQuestion(false)}>NO</button></div>
+       <button className="ans-but" type="button" onClick={()=>answerQuestion(true)}>YES</button><button className="ans-but" type="button" onClick={()=>answerQuestion(false)}>NO</button></div>
         </motion.div>
   // Rendering content based on the state
       
