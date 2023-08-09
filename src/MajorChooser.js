@@ -130,7 +130,7 @@ const MajorChooser = () => {
       className="click-box">
       <h2 className="click-name">Selected Major:</h2>
       <h3 className="click-name">{choseMaj.name}</h3>
-      <p className="click-description">{choseMaj.description}</p>
+      <p className="click-description">{choseMaj.description.academics}</p>
       </motion.div>
         )} </div></div>);};
 
