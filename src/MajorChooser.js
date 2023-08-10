@@ -101,7 +101,7 @@ const MajorChooser = () => {
   className="rec-maj-box">
   <h2 className="rec-maj-name">Major Simulation Result:</h2>
   <h3 className="rec-maj-name">{recommendedMajor.name}</h3>
-  <p className="rec-maj-desc">{recommendedMajor.description}</p>
+  <p className="rec-maj-desc">{recommendedMajor.description.academics}</p>
   <button className="resetb" onClick={reSelect}>Attempt Again</button>
         </motion.div>);}};
 
