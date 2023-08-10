@@ -1,8 +1,4 @@
-//
-// majorsData.js is housing the queestions/major/descriptions. Adds more space for my MajorChooser.js and breaks down my project even more
-// for us to be able to work on it easier as a team.
-//
-
+// Major information taken from https://admissions.unl.edu/
 export const availableMajors = [
   {
     id: 1,
@@ -1331,7 +1327,7 @@ export const availableMajors = [
   }
 ];
 
-// TODO: Update question weights for recommendations
+// Questions taken from https://www.lamar.edu
 export const questionsToAsk = [
   {
     id: 1,
