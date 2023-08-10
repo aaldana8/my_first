@@ -137,7 +137,12 @@ const MajorChooser = () => {
       className="click-box">
       <h2 className="click-name">Selected Major:</h2>
       <h3 className="click-name">{choseMaj.name}</h3>
+            <h4 className="click-name">Academics</h4>
       <p className="click-description">{choseMaj.description.academics}</p>
+            <h4 className="click-name">Experience</h4>
+            <p className="click-description">{choseMaj.description.experience}</p>
+            <h4 className="click-name">Opportunities</h4>
+            <p className="click-description">{choseMaj.description.opportunities}</p>
       </motion.div>
         )} </div></div>);};
 
