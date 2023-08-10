@@ -38,6 +38,13 @@ const MajorChooser = () => {
       }
   }
 
+  // Resets every major's affinity to the baseline, which is currently 10.
+  const resetAffinities = () => {
+    availableMajors.forEach((major) => {
+      major.affinity = 10;
+    });
+  }
+
   // Usage of state hooks below / react
 
   // Holds currently selected major
@@ -52,7 +59,7 @@ const MajorChooser = () => {
     setchoseMaj(null);
     setCurrentQuestion(0);
     setAnswer(false);  // TODO: See state hook definition
-    // TODO: Reset all major affinities. Currently, subsequent quiz attempts will cause previous affinities to carry over
+    resetAffinities();
   };
   
   //Reset the choseMaj, curr index, and answer array
