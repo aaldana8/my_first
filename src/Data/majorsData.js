@@ -3,8 +3,8 @@
 // for us to be able to work on it easier as a team.
 //
 export const availableMajors = [
-    {id: 1, name: 'Computer Science', description: 'Testing Branching' },
-    {id: 2, name: 'Psychology', description: 'Second Testing222' },
+    {id: 1, name: 'Computer Science', description: 'computer systems and programing' },
+    {id: 2, name: 'Psychology', description: 'computer systems and programing' },
     {id: 3, name: 'Business Admin', description: 'computer systems and programing' },
     {id: 4, name: 'Mechanical Eng', description:'computer systems and programing' },
     {id: 5, name: 'Biology', description: 'computer systems and programing' },
@@ -23,11 +23,12 @@ export const availableMajors = [
     {id: 18, name: 'Graphics', description: 'computer systems and programing'},
     {id: 19, name: 'Physics', description: 'computer systems and programing' },
     {id: 20, name: 'History', description: 'computer systems and programing' },    
+   
   ];
   
   export const questionsToAsk = [
   { id: 1, text: 'Are you interested in working with computers?' },
   { id: 2, text: 'Do you enjoy studying human behavior and the mind?' },
   { id: 3, text: 'Are you interested in business and management?' },
- 
+
   ];
