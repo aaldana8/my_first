@@ -1338,11 +1338,11 @@ export const questionsToAsk = [
     text: 'I need the freedom to be creative and express myself.',
     weights: [
       0, // Accounting
-      0, // Acting
+      3, // Acting
       0, // Actuarial Science
       0, // Anthropology
-      0, // Architecture
-      0, // Art
+      2, // Architecture
+      3, // Art
       0, // Biochemistry
       0, // Biological Sciences
       0, // Biological Systems Engineering
@@ -1357,7 +1357,7 @@ export const questionsToAsk = [
       0, // Computer Science
       0, // Construction Management
       0, // Criminology and Criminal Justice
-      0, // Dance
+      3, // Dance
       0, // Economics
       0, // Electrical Engineering
       0, // English
@@ -1367,22 +1367,22 @@ export const questionsToAsk = [
       0, // Food Science and Technology
       0, // Forensic Science
       0, // Geology
-      0, // Graphic Design
+      2, // Graphic Design
       0, // History
       0, // Hospitality, Restaurant, and Tourism Management
-      0, // Journalism
+      2, // Journalism
       0, // Marketing
       0, // Mathematics
       0, // Mechanical Engineering
       0, // Meteorology and Climatology
-      0, // Music
+      3, // Music
       0, // Nutrition and Health Sciences
       0, // Philosophy
       0, // Physics
       0, // Political Science
       0, // Psychology
       0, // Sports Media and Communication
-      0, // Theatre (Design/Technical Production)
+      2, // Theatre (Design/Technical Production)
       0, // Veterinary Science
       0, // Women's and Gender Studies
     ]
@@ -1392,11 +1392,11 @@ export const questionsToAsk = [
     text: 'I enjoy theatre arts, either performing as an actor or working behind the scenes on a production.',
     weights: [
       0, // Accounting
-      0, // Acting
+      3, // Acting
       0, // Actuarial Science
       0, // Anthropology
       0, // Architecture
-      0, // Art
+      1, // Art
       0, // Biochemistry
       0, // Biological Sciences
       0, // Biological Systems Engineering
@@ -1411,7 +1411,7 @@ export const questionsToAsk = [
       0, // Computer Science
       0, // Construction Management
       0, // Criminology and Criminal Justice
-      0, // Dance
+      1, // Dance
       0, // Economics
       0, // Electrical Engineering
       0, // English
@@ -1436,7 +1436,7 @@ export const questionsToAsk = [
       0, // Political Science
       0, // Psychology
       0, // Sports Media and Communication
-      0, // Theatre (Design/Technical Production)
+      3, // Theatre (Design/Technical Production)
       0, // Veterinary Science
       0, // Women's and Gender Studies
     ]
@@ -1447,18 +1447,18 @@ export const questionsToAsk = [
     weights: [
       0, // Accounting
       0, // Acting
-      0, // Actuarial Science
+      2, // Actuarial Science
       0, // Anthropology
       0, // Architecture
       0, // Art
       0, // Biochemistry
       0, // Biological Sciences
       0, // Biological Systems Engineering
-      0, // Broadcasting
-      0, // Business Administration
+      1, // Broadcasting
+      2, // Business Administration
       0, // Chemical Engineering
       0, // Chemistry
-      0, // Child, Youth, and Family Studies
+      2, // Child, Youth, and Family Studies
       0, // Civil Engineering
       0, // Communication Studies
       0, // Computer Engineering
@@ -1478,8 +1478,8 @@ export const questionsToAsk = [
       0, // Graphic Design
       0, // History
       0, // Hospitality, Restaurant, and Tourism Management
-      0, // Journalism
-      0, // Marketing
+      3, // Journalism
+      1, // Marketing
       0, // Mathematics
       0, // Mechanical Engineering
       0, // Meteorology and Climatology
@@ -1488,8 +1488,8 @@ export const questionsToAsk = [
       0, // Philosophy
       0, // Physics
       0, // Political Science
-      0, // Psychology
-      0, // Sports Media and Communication
+      3, // Psychology
+      1, // Sports Media and Communication
       0, // Theatre (Design/Technical Production)
       0, // Veterinary Science
       0, // Women's and Gender Studies
@@ -1505,20 +1505,20 @@ export const questionsToAsk = [
       0, // Anthropology
       0, // Architecture
       0, // Art
-      0, // Biochemistry
-      0, // Biological Sciences
-      0, // Biological Systems Engineering
+      2, // Biochemistry
+      3, // Biological Sciences
+      3, // Biological Systems Engineering
       0, // Broadcasting
       0, // Business Administration
       0, // Chemical Engineering
       0, // Chemistry
-      0, // Child, Youth, and Family Studies
+      2, // Child, Youth, and Family Studies
       0, // Civil Engineering
       0, // Communication Studies
       0, // Computer Engineering
       0, // Computer Science
       0, // Construction Management
-      0, // Criminology and Criminal Justice
+      2, // Criminology and Criminal Justice
       0, // Dance
       0, // Economics
       0, // Electrical Engineering
@@ -1538,14 +1538,14 @@ export const questionsToAsk = [
       0, // Mechanical Engineering
       0, // Meteorology and Climatology
       0, // Music
-      0, // Nutrition and Health Sciences
+      1, // Nutrition and Health Sciences
       0, // Philosophy
       0, // Physics
       0, // Political Science
-      0, // Psychology
+      3, // Psychology
       0, // Sports Media and Communication
       0, // Theatre (Design/Technical Production)
-      0, // Veterinary Science
+      2, // Veterinary Science
       0, // Women's and Gender Studies
     ]
   },
@@ -1557,13 +1557,13 @@ export const questionsToAsk = [
       0, // Acting
       0, // Actuarial Science
       0, // Anthropology
-      0, // Architecture
+      2, // Architecture
       0, // Art
       0, // Biochemistry
       0, // Biological Sciences
       0, // Biological Systems Engineering
       0, // Broadcasting
-      0, // Business Administration
+      2, // Business Administration
       0, // Chemical Engineering
       0, // Chemistry
       0, // Child, Youth, and Family Studies
@@ -1571,12 +1571,12 @@ export const questionsToAsk = [
       0, // Communication Studies
       0, // Computer Engineering
       0, // Computer Science
-      0, // Construction Management
+      2, // Construction Management
       0, // Criminology and Criminal Justice
       0, // Dance
       0, // Economics
       0, // Electrical Engineering
-      0, // English
+      2, // English
       0, // Environmental Science
       0, // Finance
       0, // Fisheries and Wildlife
@@ -1586,14 +1586,14 @@ export const questionsToAsk = [
       0, // Graphic Design
       0, // History
       0, // Hospitality, Restaurant, and Tourism Management
-      0, // Journalism
-      0, // Marketing
+      2, // Journalism
+      3, // Marketing
       0, // Mathematics
       0, // Mechanical Engineering
       0, // Meteorology and Climatology
       0, // Music
       0, // Nutrition and Health Sciences
-      0, // Philosophy
+      3, // Philosophy
       0, // Physics
       0, // Political Science
       0, // Psychology
@@ -1613,13 +1613,13 @@ export const questionsToAsk = [
       0, // Anthropology
       0, // Architecture
       0, // Art
-      0, // Biochemistry
-      0, // Biological Sciences
+      2, // Biochemistry
+      2, // Biological Sciences
       0, // Biological Systems Engineering
       0, // Broadcasting
       0, // Business Administration
       0, // Chemical Engineering
-      0, // Chemistry
+      1, // Chemistry
       0, // Child, Youth, and Family Studies
       0, // Civil Engineering
       0, // Communication Studies
@@ -1631,10 +1631,10 @@ export const questionsToAsk = [
       0, // Economics
       0, // Electrical Engineering
       0, // English
-      0, // Environmental Science
+      3, // Environmental Science
       0, // Finance
-      0, // Fisheries and Wildlife
-      0, // Food Science and Technology
+      3, // Fisheries and Wildlife
+      1, // Food Science and Technology
       0, // Forensic Science
       0, // Geology
       0, // Graphic Design
@@ -1644,7 +1644,7 @@ export const questionsToAsk = [
       0, // Marketing
       0, // Mathematics
       0, // Mechanical Engineering
-      0, // Meteorology and Climatology
+      3, // Meteorology and Climatology
       0, // Music
       0, // Nutrition and Health Sciences
       0, // Philosophy
@@ -1664,9 +1664,9 @@ export const questionsToAsk = [
       0, // Accounting
       0, // Acting
       0, // Actuarial Science
-      0, // Anthropology
-      0, // Architecture
-      0, // Art
+      3, // Anthropology
+      2, // Architecture
+      1, // Art
       0, // Biochemistry
       0, // Biological Sciences
       0, // Biological Systems Engineering
@@ -1690,9 +1690,9 @@ export const questionsToAsk = [
       0, // Fisheries and Wildlife
       0, // Food Science and Technology
       0, // Forensic Science
-      0, // Geology
+      3, // Geology
       0, // Graphic Design
-      0, // History
+      3, // History
       0, // Hospitality, Restaurant, and Tourism Management
       0, // Journalism
       0, // Marketing
@@ -1708,55 +1708,55 @@ export const questionsToAsk = [
       0, // Sports Media and Communication
       0, // Theatre (Design/Technical Production)
       0, // Veterinary Science
-      0, // Women's and Gender Studies
+      1, // Women's and Gender Studies
     ]
   },
   {
     id: 8,
     text: 'I like math and figuring out how things work.',
     weights: [
-      0, // Accounting
+      2, // Accounting
       0, // Acting
-      0, // Actuarial Science
+      2, // Actuarial Science
       0, // Anthropology
-      0, // Architecture
+      1, // Architecture
       0, // Art
-      0, // Biochemistry
+      1, // Biochemistry
       0, // Biological Sciences
-      0, // Biological Systems Engineering
+      2, // Biological Systems Engineering
       0, // Broadcasting
       0, // Business Administration
-      0, // Chemical Engineering
-      0, // Chemistry
+      2, // Chemical Engineering
+      1, // Chemistry
       0, // Child, Youth, and Family Studies
-      0, // Civil Engineering
+      2, // Civil Engineering
       0, // Communication Studies
-      0, // Computer Engineering
-      0, // Computer Science
+      2, // Computer Engineering
+      2, // Computer Science
       0, // Construction Management
       0, // Criminology and Criminal Justice
       0, // Dance
       0, // Economics
-      0, // Electrical Engineering
+      2, // Electrical Engineering
       0, // English
       0, // Environmental Science
       0, // Finance
       0, // Fisheries and Wildlife
-      0, // Food Science and Technology
-      0, // Forensic Science
+      1, // Food Science and Technology
+      1, // Forensic Science
       0, // Geology
       0, // Graphic Design
       0, // History
       0, // Hospitality, Restaurant, and Tourism Management
       0, // Journalism
       0, // Marketing
-      0, // Mathematics
-      0, // Mechanical Engineering
+      3, // Mathematics
+      2, // Mechanical Engineering
       0, // Meteorology and Climatology
       0, // Music
       0, // Nutrition and Health Sciences
       0, // Philosophy
-      0, // Physics
+      3, // Physics
       0, // Political Science
       0, // Psychology
       0, // Sports Media and Communication
@@ -1774,7 +1774,7 @@ export const questionsToAsk = [
       0, // Actuarial Science
       0, // Anthropology
       0, // Architecture
-      0, // Art
+      1, // Art
       0, // Biochemistry
       0, // Biological Sciences
       0, // Biological Systems Engineering
@@ -1786,7 +1786,7 @@ export const questionsToAsk = [
       0, // Civil Engineering
       0, // Communication Studies
       0, // Computer Engineering
-      0, // Computer Science
+      3, // Computer Science
       0, // Construction Management
       0, // Criminology and Criminal Justice
       0, // Dance
@@ -1799,7 +1799,7 @@ export const questionsToAsk = [
       0, // Food Science and Technology
       0, // Forensic Science
       0, // Geology
-      0, // Graphic Design
+      3, // Graphic Design
       0, // History
       0, // Hospitality, Restaurant, and Tourism Management
       0, // Journalism
@@ -1839,13 +1839,13 @@ export const questionsToAsk = [
       0, // Child, Youth, and Family Studies
       0, // Civil Engineering
       0, // Communication Studies
-      0, // Computer Engineering
-      0, // Computer Science
+      3, // Computer Engineering
+      3, // Computer Science
       0, // Construction Management
       0, // Criminology and Criminal Justice
       0, // Dance
       0, // Economics
-      0, // Electrical Engineering
+      3, // Electrical Engineering
       0, // English
       0, // Environmental Science
       0, // Finance
@@ -1880,16 +1880,16 @@ export const questionsToAsk = [
       0, // Accounting
       0, // Acting
       0, // Actuarial Science
-      0, // Anthropology
+      1, // Anthropology
       0, // Architecture
       0, // Art
-      0, // Biochemistry
-      0, // Biological Sciences
-      0, // Biological Systems Engineering
+      2, // Biochemistry
+      3, // Biological Sciences
+      1, // Biological Systems Engineering
       0, // Broadcasting
       0, // Business Administration
       0, // Chemical Engineering
-      0, // Chemistry
+      2, // Chemistry
       0, // Child, Youth, and Family Studies
       0, // Civil Engineering
       0, // Communication Studies
@@ -1901,10 +1901,10 @@ export const questionsToAsk = [
       0, // Economics
       0, // Electrical Engineering
       0, // English
-      0, // Environmental Science
+      2, // Environmental Science
       0, // Finance
       0, // Fisheries and Wildlife
-      0, // Food Science and Technology
+      1, // Food Science and Technology
       0, // Forensic Science
       0, // Geology
       0, // Graphic Design
@@ -1916,14 +1916,14 @@ export const questionsToAsk = [
       0, // Mechanical Engineering
       0, // Meteorology and Climatology
       0, // Music
-      0, // Nutrition and Health Sciences
+      3, // Nutrition and Health Sciences
       0, // Philosophy
       0, // Physics
       0, // Political Science
       0, // Psychology
       0, // Sports Media and Communication
       0, // Theatre (Design/Technical Production)
-      0, // Veterinary Science
+      1, // Veterinary Science
       0, // Women's and Gender Studies
     ]
   },
@@ -1936,7 +1936,7 @@ export const questionsToAsk = [
       0, // Actuarial Science
       0, // Anthropology
       0, // Architecture
-      0, // Art
+      2, // Art
       0, // Biochemistry
       0, // Biological Sciences
       0, // Biological Systems Engineering
@@ -1944,7 +1944,7 @@ export const questionsToAsk = [
       0, // Business Administration
       0, // Chemical Engineering
       0, // Chemistry
-      0, // Child, Youth, and Family Studies
+      1, // Child, Youth, and Family Studies
       0, // Civil Engineering
       0, // Communication Studies
       0, // Computer Engineering
@@ -1957,27 +1957,27 @@ export const questionsToAsk = [
       0, // English
       0, // Environmental Science
       0, // Finance
-      0, // Fisheries and Wildlife
+      1, // Fisheries and Wildlife
       0, // Food Science and Technology
-      0, // Forensic Science
-      0, // Geology
+      1, // Forensic Science
+      2, // Geology
       0, // Graphic Design
       0, // History
       0, // Hospitality, Restaurant, and Tourism Management
       0, // Journalism
       0, // Marketing
       0, // Mathematics
-      0, // Mechanical Engineering
+      2, // Mechanical Engineering
       0, // Meteorology and Climatology
-      0, // Music
+      1, // Music
       0, // Nutrition and Health Sciences
       0, // Philosophy
       0, // Physics
       0, // Political Science
       0, // Psychology
       0, // Sports Media and Communication
-      0, // Theatre (Design/Technical Production)
-      0, // Veterinary Science
+      2, // Theatre (Design/Technical Production)
+      2, // Veterinary Science
       0, // Women's and Gender Studies
     ]
   },
@@ -1989,8 +1989,8 @@ export const questionsToAsk = [
       0, // Acting
       0, // Actuarial Science
       0, // Anthropology
-      0, // Architecture
-      0, // Art
+      1, // Architecture
+      3, // Art
       0, // Biochemistry
       0, // Biological Sciences
       0, // Biological Systems Engineering
@@ -2048,21 +2048,21 @@ export const questionsToAsk = [
       0, // Biochemistry
       0, // Biological Sciences
       0, // Biological Systems Engineering
-      0, // Broadcasting
-      0, // Business Administration
+      2, // Broadcasting
+      1, // Business Administration
       0, // Chemical Engineering
       0, // Chemistry
-      0, // Child, Youth, and Family Studies
+      1, // Child, Youth, and Family Studies
       0, // Civil Engineering
-      0, // Communication Studies
+      1, // Communication Studies
       0, // Computer Engineering
       0, // Computer Science
-      0, // Construction Management
+      2, // Construction Management
       0, // Criminology and Criminal Justice
       0, // Dance
       0, // Economics
       0, // Electrical Engineering
-      0, // English
+      1, // English
       0, // Environmental Science
       0, // Finance
       0, // Fisheries and Wildlife
@@ -2073,7 +2073,7 @@ export const questionsToAsk = [
       0, // History
       0, // Hospitality, Restaurant, and Tourism Management
       0, // Journalism
-      0, // Marketing
+      3, // Marketing
       0, // Mathematics
       0, // Mechanical Engineering
       0, // Meteorology and Climatology
@@ -2083,7 +2083,7 @@ export const questionsToAsk = [
       0, // Physics
       0, // Political Science
       0, // Psychology
-      0, // Sports Media and Communication
+      2, // Sports Media and Communication
       0, // Theatre (Design/Technical Production)
       0, // Veterinary Science
       0, // Women's and Gender Studies
@@ -2093,53 +2093,53 @@ export const questionsToAsk = [
     id: 15,
     text: "I'm good with numbers and am detail-oriented.",
     weights: [
-      0, // Accounting
+      3, // Accounting
       0, // Acting
-      0, // Actuarial Science
+      3, // Actuarial Science
       0, // Anthropology
-      0, // Architecture
+      1, // Architecture
       0, // Art
-      0, // Biochemistry
+      2, // Biochemistry
       0, // Biological Sciences
-      0, // Biological Systems Engineering
+      3, // Biological Systems Engineering
       0, // Broadcasting
       0, // Business Administration
-      0, // Chemical Engineering
-      0, // Chemistry
+      3, // Chemical Engineering
+      1, // Chemistry
       0, // Child, Youth, and Family Studies
       0, // Civil Engineering
       0, // Communication Studies
-      0, // Computer Engineering
-      0, // Computer Science
-      0, // Construction Management
+      3, // Computer Engineering
+      3, // Computer Science
+      2, // Construction Management
       0, // Criminology and Criminal Justice
       0, // Dance
       0, // Economics
-      0, // Electrical Engineering
+      3, // Electrical Engineering
       0, // English
       0, // Environmental Science
-      0, // Finance
+      2, // Finance
       0, // Fisheries and Wildlife
       0, // Food Science and Technology
-      0, // Forensic Science
+      2, // Forensic Science
       0, // Geology
       0, // Graphic Design
       0, // History
       0, // Hospitality, Restaurant, and Tourism Management
       0, // Journalism
       0, // Marketing
-      0, // Mathematics
-      0, // Mechanical Engineering
+      2, // Mathematics
+      3, // Mechanical Engineering
       0, // Meteorology and Climatology
       0, // Music
       0, // Nutrition and Health Sciences
       0, // Philosophy
-      0, // Physics
+      2, // Physics
       0, // Political Science
       0, // Psychology
       0, // Sports Media and Communication
       0, // Theatre (Design/Technical Production)
-      0, // Veterinary Science
+      1, // Veterinary Science
       0, // Women's and Gender Studies
     ]
   },
@@ -2166,9 +2166,9 @@ export const questionsToAsk = [
       0, // Computer Engineering
       0, // Computer Science
       0, // Construction Management
-      0, // Criminology and Criminal Justice
+      3, // Criminology and Criminal Justice
       0, // Dance
-      0, // Economics
+      1, // Economics
       0, // Electrical Engineering
       0, // English
       0, // Environmental Science
@@ -2180,21 +2180,21 @@ export const questionsToAsk = [
       0, // Graphic Design
       0, // History
       0, // Hospitality, Restaurant, and Tourism Management
-      0, // Journalism
+      2, // Journalism
       0, // Marketing
       0, // Mathematics
       0, // Mechanical Engineering
       0, // Meteorology and Climatology
       0, // Music
       0, // Nutrition and Health Sciences
-      0, // Philosophy
+      3, // Philosophy
       0, // Physics
-      0, // Political Science
+      3, // Political Science
       0, // Psychology
       0, // Sports Media and Communication
       0, // Theatre (Design/Technical Production)
       0, // Veterinary Science
-      0, // Women's and Gender Studies
+      1, // Women's and Gender Studies
     ]
   },
   {
@@ -2214,13 +2214,13 @@ export const questionsToAsk = [
       0, // Business Administration
       0, // Chemical Engineering
       0, // Chemistry
-      0, // Child, Youth, and Family Studies
+      2, // Child, Youth, and Family Studies
       0, // Civil Engineering
-      0, // Communication Studies
+      2, // Communication Studies
       0, // Computer Engineering
       0, // Computer Science
       0, // Construction Management
-      0, // Criminology and Criminal Justice
+      3, // Criminology and Criminal Justice
       0, // Dance
       0, // Economics
       0, // Electrical Engineering
@@ -2244,7 +2244,7 @@ export const questionsToAsk = [
       0, // Philosophy
       0, // Physics
       0, // Political Science
-      0, // Psychology
+      2, // Psychology
       0, // Sports Media and Communication
       0, // Theatre (Design/Technical Production)
       0, // Veterinary Science
@@ -2278,7 +2278,7 @@ export const questionsToAsk = [
       0, // Dance
       0, // Economics
       0, // Electrical Engineering
-      0, // English
+      3, // English
       0, // Environmental Science
       0, // Finance
       0, // Fisheries and Wildlife
@@ -2288,7 +2288,7 @@ export const questionsToAsk = [
       0, // Graphic Design
       0, // History
       0, // Hospitality, Restaurant, and Tourism Management
-      0, // Journalism
+      2, // Journalism
       0, // Marketing
       0, // Mathematics
       0, // Mechanical Engineering
@@ -2326,7 +2326,7 @@ export const questionsToAsk = [
       0, // Civil Engineering
       0, // Communication Studies
       0, // Computer Engineering
-      0, // Computer Science
+      2, // Computer Science
       0, // Construction Management
       0, // Criminology and Criminal Justice
       0, // Dance
@@ -2336,7 +2336,7 @@ export const questionsToAsk = [
       0, // Environmental Science
       0, // Finance
       0, // Fisheries and Wildlife
-      0, // Food Science and Technology
+      2, // Food Science and Technology
       0, // Forensic Science
       0, // Geology
       0, // Graphic Design
@@ -2376,7 +2376,7 @@ export const questionsToAsk = [
       0, // Business Administration
       0, // Chemical Engineering
       0, // Chemistry
-      0, // Child, Youth, and Family Studies
+      3, // Child, Youth, and Family Studies
       0, // Civil Engineering
       0, // Communication Studies
       0, // Computer Engineering
@@ -2402,11 +2402,11 @@ export const questionsToAsk = [
       0, // Mechanical Engineering
       0, // Meteorology and Climatology
       0, // Music
-      0, // Nutrition and Health Sciences
+      1, // Nutrition and Health Sciences
       0, // Philosophy
       0, // Physics
       0, // Political Science
-      0, // Psychology
+      1, // Psychology
       0, // Sports Media and Communication
       0, // Theatre (Design/Technical Production)
       0, // Veterinary Science
@@ -2423,13 +2423,13 @@ export const questionsToAsk = [
       0, // Anthropology
       0, // Architecture
       0, // Art
-      0, // Biochemistry
-      0, // Biological Sciences
-      0, // Biological Systems Engineering
+      2, // Biochemistry
+      2, // Biological Sciences
+      2, // Biological Systems Engineering
       0, // Broadcasting
       0, // Business Administration
       0, // Chemical Engineering
-      0, // Chemistry
+      2, // Chemistry
       0, // Child, Youth, and Family Studies
       0, // Civil Engineering
       0, // Communication Studies
@@ -2444,7 +2444,7 @@ export const questionsToAsk = [
       0, // Environmental Science
       0, // Finance
       0, // Fisheries and Wildlife
-      0, // Food Science and Technology
+      2, // Food Science and Technology
       0, // Forensic Science
       0, // Geology
       0, // Graphic Design
@@ -2456,14 +2456,14 @@ export const questionsToAsk = [
       0, // Mechanical Engineering
       0, // Meteorology and Climatology
       0, // Music
-      0, // Nutrition and Health Sciences
+      2, // Nutrition and Health Sciences
       0, // Philosophy
       0, // Physics
       0, // Political Science
-      0, // Psychology
+      2, // Psychology
       0, // Sports Media and Communication
       0, // Theatre (Design/Technical Production)
-      0, // Veterinary Science
+      2, // Veterinary Science
       0, // Women's and Gender Studies
     ]
   },
@@ -2474,7 +2474,7 @@ export const questionsToAsk = [
       0, // Accounting
       0, // Acting
       0, // Actuarial Science
-      0, // Anthropology
+      2, // Anthropology
       0, // Architecture
       0, // Art
       0, // Biochemistry
@@ -2486,7 +2486,7 @@ export const questionsToAsk = [
       0, // Chemistry
       0, // Child, Youth, and Family Studies
       0, // Civil Engineering
-      0, // Communication Studies
+      1, // Communication Studies
       0, // Computer Engineering
       0, // Computer Science
       0, // Construction Management
@@ -2502,7 +2502,7 @@ export const questionsToAsk = [
       0, // Forensic Science
       0, // Geology
       0, // Graphic Design
-      0, // History
+      2, // History
       0, // Hospitality, Restaurant, and Tourism Management
       0, // Journalism
       0, // Marketing
@@ -2532,19 +2532,19 @@ export const questionsToAsk = [
       0, // Architecture
       0, // Art
       0, // Biochemistry
-      0, // Biological Sciences
+      1, // Biological Sciences
       0, // Biological Systems Engineering
       0, // Broadcasting
       0, // Business Administration
       0, // Chemical Engineering
       0, // Chemistry
-      0, // Child, Youth, and Family Studies
+      2, // Child, Youth, and Family Studies
       0, // Civil Engineering
       0, // Communication Studies
       0, // Computer Engineering
       0, // Computer Science
       0, // Construction Management
-      0, // Criminology and Criminal Justice
+      1, // Criminology and Criminal Justice
       0, // Dance
       0, // Economics
       0, // Electrical Engineering
@@ -2557,21 +2557,21 @@ export const questionsToAsk = [
       0, // Geology
       0, // Graphic Design
       0, // History
-      0, // Hospitality, Restaurant, and Tourism Management
-      0, // Journalism
+      1, // Hospitality, Restaurant, and Tourism Management
+      1, // Journalism
       0, // Marketing
       0, // Mathematics
       0, // Mechanical Engineering
       0, // Meteorology and Climatology
       0, // Music
-      0, // Nutrition and Health Sciences
+      2, // Nutrition and Health Sciences
       0, // Philosophy
       0, // Physics
       0, // Political Science
-      0, // Psychology
+      1, // Psychology
       0, // Sports Media and Communication
       0, // Theatre (Design/Technical Production)
-      0, // Veterinary Science
+      1, // Veterinary Science
       0, // Women's and Gender Studies
     ]
   },
@@ -2592,7 +2592,7 @@ export const questionsToAsk = [
       0, // Business Administration
       0, // Chemical Engineering
       0, // Chemistry
-      0, // Child, Youth, and Family Studies
+      2, // Child, Youth, and Family Studies
       0, // Civil Engineering
       0, // Communication Studies
       0, // Computer Engineering
@@ -2622,65 +2622,65 @@ export const questionsToAsk = [
       0, // Philosophy
       0, // Physics
       0, // Political Science
-      0, // Psychology
+      1, // Psychology
       0, // Sports Media and Communication
       0, // Theatre (Design/Technical Production)
       0, // Veterinary Science
-      0, // Women's and Gender Studies
+      2, // Women's and Gender Studies
     ]
   },
   {
     id: 25,
     text: "I'm interested in a wide range of subjects and careers.",
     weights: [
-      0, // Accounting
-      0, // Acting
-      0, // Actuarial Science
-      0, // Anthropology
-      0, // Architecture
-      0, // Art
-      0, // Biochemistry
-      0, // Biological Sciences
-      0, // Biological Systems Engineering
-      0, // Broadcasting
-      0, // Business Administration
-      0, // Chemical Engineering
-      0, // Chemistry
-      0, // Child, Youth, and Family Studies
-      0, // Civil Engineering
-      0, // Communication Studies
-      0, // Computer Engineering
-      0, // Computer Science
-      0, // Construction Management
-      0, // Criminology and Criminal Justice
-      0, // Dance
-      0, // Economics
-      0, // Electrical Engineering
-      0, // English
-      0, // Environmental Science
-      0, // Finance
-      0, // Fisheries and Wildlife
-      0, // Food Science and Technology
-      0, // Forensic Science
-      0, // Geology
-      0, // Graphic Design
-      0, // History
-      0, // Hospitality, Restaurant, and Tourism Management
-      0, // Journalism
-      0, // Marketing
-      0, // Mathematics
-      0, // Mechanical Engineering
-      0, // Meteorology and Climatology
-      0, // Music
-      0, // Nutrition and Health Sciences
-      0, // Philosophy
-      0, // Physics
-      0, // Political Science
-      0, // Psychology
-      0, // Sports Media and Communication
-      0, // Theatre (Design/Technical Production)
-      0, // Veterinary Science
-      0, // Women's and Gender Studies
+      1, // Accounting
+      1, // Acting
+      1, // Actuarial Science
+      1, // Anthropology
+      1, // Architecture
+      1, // Art
+      1, // Biochemistry
+      1, // Biological Sciences
+      1, // Biological Systems Engineering
+      1, // Broadcasting
+      1, // Business Administration
+      1, // Chemical Engineering
+      1, // Chemistry
+      1, // Child, Youth, and Family Studies
+      1, // Civil Engineering
+      1, // Communication Studies
+      1, // Computer Engineering
+      1, // Computer Science
+      1, // Construction Management
+      1, // Criminology and Criminal Justice
+      1, // Dance
+      1, // Economics
+      1, // Electrical Engineering
+      1, // English
+      1, // Environmental Science
+      1, // Finance
+      1, // Fisheries and Wildlife
+      1, // Food Science and Technology
+      1, // Forensic Science
+      1, // Geology
+      1, // Graphic Design
+      1, // History
+      1, // Hospitality, Restaurant, and Tourism Management
+      1, // Journalism
+      1, // Marketing
+      1, // Mathematics
+      1, // Mechanical Engineering
+      1, // Meteorology and Climatology
+      1, // Music
+      1, // Nutrition and Health Sciences
+      1, // Philosophy
+      1, // Physics
+      1, // Political Science
+      1, // Psychology
+      1, // Sports Media and Communication
+      1, // Theatre (Design/Technical Production)
+      1, // Veterinary Science
+      1, // Women's and Gender Studies
     ]
   },
   {
@@ -2727,9 +2727,9 @@ export const questionsToAsk = [
       0, // Meteorology and Climatology
       0, // Music
       0, // Nutrition and Health Sciences
-      0, // Philosophy
+      3, // Philosophy
       0, // Physics
-      0, // Political Science
+      1, // Political Science
       0, // Psychology
       0, // Sports Media and Communication
       0, // Theatre (Design/Technical Production)
@@ -2779,7 +2779,7 @@ export const questionsToAsk = [
       0, // Mathematics
       0, // Mechanical Engineering
       0, // Meteorology and Climatology
-      0, // Music
+      3, // Music
       0, // Nutrition and Health Sciences
       0, // Philosophy
       0, // Physics
@@ -2813,7 +2813,7 @@ export const questionsToAsk = [
       0, // Communication Studies
       0, // Computer Engineering
       0, // Computer Science
-      0, // Construction Management
+      3, // Construction Management
       0, // Criminology and Criminal Justice
       0, // Dance
       0, // Economics
@@ -2827,7 +2827,7 @@ export const questionsToAsk = [
       0, // Geology
       0, // Graphic Design
       0, // History
-      0, // Hospitality, Restaurant, and Tourism Management
+      3, // Hospitality, Restaurant, and Tourism Management
       0, // Journalism
       0, // Marketing
       0, // Mathematics
