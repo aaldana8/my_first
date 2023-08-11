@@ -6,50 +6,51 @@ import { motion } from 'framer-motion';
 import './MajorChooser.css';
 
 /**
+  * Sorts majors list by affinity and retrieves the major with highest affinity.
+  * @note If affinities are equal when sorting, precedence goes to item1.
+  * @function
+  * @returns The major with the highest affinity score.
+  */
+const getHighestAffinityMajor = () => {
+  availableMajors.sort((item1, item2) => (item1.affinity >= item2.affinity) ? -1 : 1);
+
+  return availableMajors[0];
+};
+
+/**
+  * Updates current affinity score depending on answer received for current question.
+  * If user answered yes, affinities increase; responding no decreases affinities.
+  * @function
+  * @param {boolean} uinput - True if user answered yes; False for no.
+  */
+const updateAffinities = (uinput, currentQuestion) => {
+    if (uinput) {
+      availableMajors.forEach((majorItem) => {
+        majorItem.affinity += questionsToAsk[currentQuestion].weights[majorItem.id - 1]
+      });
+    } else {
+      availableMajors.forEach((majorItem) => {
+        majorItem.affinity -= questionsToAsk[currentQuestion].weights[majorItem.id - 1]
+      });
+    }
+}
+
+/**
+  * Resets major affinities to their baseline, which is 10.
+  * @function
+  */
+const resetAffinities = () => {
+  availableMajors.forEach((major) => {
+    major.affinity = 10;
+  });
+}
+
+/**
  * Main function for generating the web app HTML.
  * @function
  * @returns HTML components generated from React.
  */
 const MajorChooser = () => {
-  /**
-   * Sorts majors list by affinity and retrieves the major with highest affinity.
-   * @note If affinities are equal when sorting, precedence goes to item1.
-   * @function
-   * @returns The major with the highest affinity score.
-   */
-  const getHighestAffinityMajor = () => {
-    availableMajors.sort((item1, item2) => (item1.affinity >= item2.affinity) ? -1 : 1);
-
-    return availableMajors[0];
-  };     
-
-  /**
-   * Updates current affinity score depending on answer received for current question.
-   * If user answered yes, affinities increase; responding no decreases affinities.
-   * @function
-   * @param {boolean} uinput - True if user answered yes; False for no.
-   */
-  const updateAffinities = (uinput) => {
-      if (uinput) {
-        availableMajors.forEach((majorItem) => {
-          majorItem.affinity += questionsToAsk[currentQuestion].weights[majorItem.id - 1]
-        });
-      } else {
-        availableMajors.forEach((majorItem) => {
-          majorItem.affinity -= questionsToAsk[currentQuestion].weights[majorItem.id - 1]
-        });
-      }
-  }
-
-  /**
-   * Resets major affinities to their baseline, which is 10.
-   * @function
-   */
-  const resetAffinities = () => {
-    availableMajors.forEach((major) => {
-      major.affinity = 10;
-    });
-  }
 
   // Major currently selected by the user
   const [choseMaj, setchoseMaj] = useState(null);
@@ -85,7 +86,7 @@ const MajorChooser = () => {
    */
   const answerQuestion = (uinput) => {
     setAnswer(uinput);
-    updateAffinities(uinput);
+    updateAffinities(uinput, currentQuestion);
     setCurrentQuestion(currentQuestion + 1);
   };
 
