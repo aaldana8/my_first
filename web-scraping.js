@@ -52,49 +52,70 @@ const urlList = [
   "https://admissions.unl.edu/majors/83/cas-women-s-and-gender-studies/",
 ];
 
-const responseList = [];
+/**
+ * Scrapes the HTML located at every URL in the given list and creates objects
+ * that model individual majors.
+ * @function
+ * @param {Array} urlList - An array of URLs to fetch data from.
+ * @returns {Array} responseList - An array of objects representing each major.
+ */
+const fetchData = (urlList) => {
+  let responseList = [];
+  let id = 0;
 
-let id = 0;
+  urlList.forEach(async (url) => {
+    await axios(url)
+      .then((response) => {
+        const html = response.data;
+        const $ = cheerio.load(html);
+        const name = $("h1").first().text();
+        const academics = $(".adm-block-content h4").first().nextUntil("h4").text();
+        const experience = $(".adm-block-content h4").eq(1).nextUntil("h4").text();
+        const opportunities = $(".adm-block-content h4").last().nextUntil("h4").text();
 
-urlList.forEach(async (url) => {
-  await axios(url)
-    .then((response) => {
-      const html = response.data;
-      const $ = cheerio.load(html);
-      const name = $("h1").first().text();
-      const academics = $(".adm-block-content h4").first().nextUntil("h4").text();
-      const experience = $(".adm-block-content h4").eq(1).nextUntil("h4").text();
-      const opportunities = $(".adm-block-content h4").last().nextUntil("h4").text();
+        id += 1;
 
-      id += 1;
+        const description = {
+          academics: academics,
+          experience: experience,
+          opportunities: opportunities,
+        };
 
-      const description = {
-        academics: academics,
-        experience: experience,
-        opportunities: opportunities,
-      };
+        const majorInfo = {
+          id: id,
+          name: name,
+          college: "",  // h1 seems to contain both major name and college
+          description: description,
+          affinity: 10,
+        };
 
-      const majorInfo = {
-        id: id,
-        name: name,
-        college: "",  // h1 seems to contain both major name and college
-        description: description,
-        affinity: 10,
-      };
+        responseList.push(majorInfo);
+      })
+    .catch(console.error);
+  });
+  return responseList;
+};
 
-      responseList.push(majorInfo);
-    })
-  .catch(console.error);
-});
-
-// Axios makes asynchronous call, so console log below will be empty unless we delay it
-// Is there a better way? Probably. Does this work for out two-week timeframe? Absolutely.
-setTimeout(() => {
+/**
+ * Sorts the given list of responses by name and reassigns IDs based on the
+ * new ordering.
+ * @function
+ * @param {Array} responseList - An array of responses to sort.
+ * @note IDs are reassigned to preserve the new ordering based on name.
+ */
+const sortList = (responseList) => {
   responseList.sort((item1, item2) => (item1.name >= item2.name) ? 1 : -1);
   let i = 0;
   responseList.forEach((item) => {
     i += 1;
     item.id = i;
   });
+};
+
+const responseList = fetchData(urlList);
+
+// Timeout to wait for asynchronous calls
+setTimeout(() => {
+  sortList(responseList);
   console.log(responseList)
-}, 30000);
+}, 2500);
