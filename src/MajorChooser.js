@@ -5,17 +5,30 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './MajorChooser.css';
 
+/**
+ * Main function for generating the web app HTML.
+ * @function
+ * @returns HTML components generated from React.
+ */
 const MajorChooser = () => {
-  // Sorts majors list and returns major with the highest affinity score
+  /**
+   * Sorts majors list by affinity and retrieves the major with highest affinity.
+   * @note If affinities are equal when sorting, precedence goes to item1.
+   * @function
+   * @returns The major with the highest affinity score.
+   */
   const getHighestAffinityMajor = () => {
-    // Give precedence to item with higher affinity
-    // NOTE: If affinities are equal, precedence goes to item1
     availableMajors.sort((item1, item2) => (item1.affinity >= item2.affinity) ? -1 : 1);
 
-  return availableMajors[0];};     
+    return availableMajors[0];
+  };     
 
-  // Updates current affinity score depending on answer received for current question
-  // If user answered yes, affinities increase; responding no decreases affinities
+  /**
+   * Updates current affinity score depending on answer received for current question.
+   * If user answered yes, affinities increase; responding no decreases affinities.
+   * @function
+   * @param {boolean} uinput - True if user answered yes; False for no.
+   */
   const updateAffinities = (uinput) => {
       if (uinput) {
         availableMajors.forEach((majorItem) => {
@@ -28,7 +41,10 @@ const MajorChooser = () => {
       }
   }
 
-  // Resets every major's affinity to the baseline, which is currently 10.
+  /**
+   * Resets major affinities to their baseline, which is 10.
+   * @function
+   */
   const resetAffinities = () => {
     availableMajors.forEach((major) => {
       major.affinity = 10;
@@ -42,29 +58,44 @@ const MajorChooser = () => {
   // Holds user response to current question
   const [answer, setAnswer] = useState(false);
 
-  // Resets quiz state when 'Attempt Again' is clicked
+  /**
+   * Resets quiz state when 'Attempt Again' is clicked.
+   * @function
+   */
   const reSelect = () => {
     setchoseMaj(null);
     setCurrentQuestion(0);
     setAnswer(false);
     resetAffinities();
   };
-  
-  // Sets state for whichever major the user has selected from
-  //   the map
+
+  /**
+   * Sets the state for whichever major the user has selected from the map.
+   * @function
+   * @param {Object} majorItem - The currently selected major object.
+   */
   const pickMaj = (majorItem) => {
     setchoseMaj(majorItem);
   }
- 
-  // Called when either yes or no button is clicked
-  // yes = true; no = false
+
+  /**
+   * Called when either button is selected by the user.
+   * @function
+   * @param {boolean} uinput - True if user answered yes; False for no.
+   */
   const answerQuestion = (uinput) => {
     setAnswer(uinput);
     updateAffinities(uinput);
-    setCurrentQuestion(currentQuestion+1);
+    setCurrentQuestion(currentQuestion + 1);
   };
 
-  // Present quiz questions one at a time
+  /**
+   * Presents quiz questions for the user to answer and the results of 
+   * the quiz.
+   * @function
+   * @returns Content for each question in the quiz if any are left; The 
+   *     results screen once all questions have been answered.
+   */
   const renderContent = () => {
     if (questionsToAsk.length > currentQuestion) { 
       return (
@@ -119,7 +150,7 @@ const MajorChooser = () => {
               alive={{opacity: 1, x: 0}}
               movingprt={{duration: 0.5}}
               onClick={() => pickMaj(majorItem)}
-              className={`major-Na ${choseMaj===majorItem?'selected':''}`}
+              className={`major-Na ${choseMaj === majorItem ? 'selected' : ''}`}
             >
               <span className="major-name">{majorItem.name}</span> 
               {choseMaj === majorItem && <FontAwesomeIcon icon={faCheckCircle} className="check-icon"/>}
