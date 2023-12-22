@@ -5,7 +5,7 @@ import {MdOutlineAppRegistration} from "react-icons/md";
 import {AiOutlineDatabase} from "react-icons/ai";
 import {GrUpdate} from "react-icons/gr";
 import {GrCircleInformation} from "react-icons/gr";
-import '../index.css'
+import '../App.css'
 
 
 const About = () => {
